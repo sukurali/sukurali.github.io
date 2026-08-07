@@ -1,0 +1,29 @@
+<section class="events" id="events">
+  <div class="container">
+    <div class="events-content">
+      <span class="section-label">{{ .Site.Params.events_label }}</span>
+      <h2>{{ .Site.Params.events_title }}</h2>
+      <p>{{ .Site.Params.events_text }}</p>
+      <ul class="events-list">
+        <li><i class="fas fa-check-circle"></i> If you are going to use a passage of you need.</li>
+        <li><i class="fas fa-check-circle"></i> Lorem ipsum available, but the majority have suffered.</li>
+      </ul>
+      <a href="#" class="btn btn-orange"><i class="fas fa-arrow-right"></i> {{ .Site.Params.events_cta }}</a>
+    </div>
+    <div class="events-items">
+      {{ range .Site.Data.events }}
+      <div class="event-item">
+        <div class="event-img">
+          <img src="{{ .image }}" alt="{{ .title }}">
+          <div class="event-date">{{ .date }}</div>
+        </div>
+        <div class="event-info">
+          <div class="event-meta"><i class="far fa-clock"></i> {{ .time }} - {{ .location }}</div>
+          <h4>{{ .title }}</h4>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

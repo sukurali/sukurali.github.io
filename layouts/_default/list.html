@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="news" style="padding-top: 140px;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Blog</span>
+      <h2 class="section-title">{{ .Title }}</h2>
+    </div>
+    <div class="news-grid">
+      {{ range .Pages }}
+      <div class="news-card">
+        <div class="news-img">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}">
+          <div class="news-date">{{ .Date.Format "02 Jan" | upper }}</div>
+        </div>
+        <div class="news-content">
+          <div class="news-meta">
+            <span><i class="fas fa-user"></i> {{ .Params.author }}</span>
+            <span><i class="fas fa-comments"></i> {{ .Params.comments }} Comments</span>
+          </div>
+          <h3>{{ .Title }}</h3>
+          <p style="font-size: 14px; color: #666; margin-bottom: 12px;">{{ .Summary | truncate 120 }}</p>
+          <a href="{{ .RelPermalink }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

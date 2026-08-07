@@ -1,0 +1,16 @@
+<section class="hero" style="background: linear-gradient(rgba(26, 26, 94, 0.7), rgba(26, 26, 94, 0.8)), url('{{ .Site.Params.hero_bg }}') center/cover no-repeat;">
+  <div class="hero-content">
+    <h1>{{ .Site.Params.hero_title }}</h1>
+    <p>{{ .Site.Params.hero_subtitle }}</p>
+    <a href="#" class="btn btn-orange"><i class="fas fa-arrow-right"></i> {{ .Site.Params.hero_cta }}</a>
+  </div>
+  <div class="hero-arrow prev"><i class="fas fa-arrow-left"></i></div>
+  <div class="hero-arrow next"><i class="fas fa-arrow-right"></i></div>
+  <div class="hero-stats">
+    <div class="container">
+      <div class="stat-item"><i class="fas fa-phone"></i> {{ .Site.Params.stat_phone }}</div>
+      <div class="stat-item"><i class="fas fa-ruler-combined"></i> {{ .Site.Params.stat_space }}</div>
+      <div class="stat-item"><i class="fas fa-chair"></i> {{ .Site.Params.stat_seats }}</div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+[
+  { "title": "High Speed Internet", "icon": "wifi" },
+  { "title": "Fully Equipped Kitchen", "icon": "utensils" },
+  { "title": "Huge Parking Space", "icon": "car" },
+  { "title": "Conference Rooms", "icon": "users" },
+  { "title": "Fully Security Cameras", "icon": "video" },
+  { "title": "Space for Events", "icon": "calendar-alt" },
+  { "title": "Flexible Memberships", "icon": "id-card" },
+  { "title": "24h Access", "icon": "clock" }
+]

@@ -1,0 +1,93 @@
+baseURL = "https://komito.example.com"
+languageCode = "en-us"
+title = "Komito - Creative Environment Coworking Space"
+
+[params]
+  description = "We're providing the great place to work"
+  author = "Komito Team"
+  email = "needhelp@company.com"
+  phone = "+92 888 333 0000"
+  phone_display = "+1-(246) 333-0079"
+  address = "80 Brooklyn Street, New York"
+  work_hours = "Mon - Sat 8:00 - 6:30"
+  closed_day = "Sunday - CLOSED"
+  copyright = "© Copyright 2022 by Komito.com"
+
+  hero_title = "Creative Environment Coworking Space"
+  hero_subtitle = "We're providing the great place to work"
+  hero_cta = "Book Your Tour"
+  hero_bg = "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80"
+
+  stat_phone = "+92 888 333 0000"
+  stat_space = "480 sq ft coworking space"
+  stat_seats = "3740 total seats are available"
+
+  features_label = "Get To Know Us"
+  features_title = "We Known for Having Cool Workspaces Filled with Amenities"
+  features_badge_number = "640"
+  features_badge_text = "Conference & Meeting Rooms"
+
+  about_label = "Get To Know Us"
+  about_title = "Leading Coworking Space Provider"
+  about_subtitle = "Lorem ipsum is simply free text dolor sit am adipi we help you ensure everyone."
+  about_text = "Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet dolores sit ipsum velit purus aliq massa fringilla leo."
+  about_cta = "Book Your Tour"
+  about_experience = "3 Years of Experience"
+
+  services_label = "What We're Offering"
+  services_title = "Available Services"
+
+  trust_title = "Trusted & creative work space for your business"
+
+  testimonials_label = "Our Testimonials"
+  testimonials_title = "What They Say"
+
+  pricing_label = "Our Pricing Tables"
+  pricing_title = "Choose Pricing Plans"
+
+  events_label = "Join Latest Events"
+  events_title = "Checkout Upcoming Events"
+  events_text = "Lorem ipsum is simply free text dolor sit am adipi we help you ensure everyone. Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet dolores sit ipsum velit purus aliq massa fringilla leo."
+  events_cta = "View All Events"
+
+  news_label = "How We Help Clients"
+  news_title = "News & Articles"
+
+  footer_help_title = "Need a quick help or have questions?"
+  footer_call_text = "Call Anytime"
+
+  twitter = "#"
+  facebook = "#"
+  pinterest = "#"
+  instagram = "#"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Pages"
+    url = "#features"
+    weight = 20
+  [[menu.main]]
+    name = "Events"
+    url = "#events"
+    weight = 30
+  [[menu.main]]
+    name = "Elements"
+    url = "#services"
+    weight = 40
+  [[menu.main]]
+    name = "Blog"
+    url = "#news"
+    weight = 50
+  [[menu.main]]
+    name = "Contact"
+    url = "#footer"
+    weight = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,37 @@
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-info">
+      <span><i class="fas fa-envelope"></i> {{ .Site.Params.email }}</span>
+      <span><i class="far fa-clock"></i> {{ .Site.Params.work_hours }}, {{ .Site.Params.closed_day }}</span>
+    </div>
+    <div class="top-bar-social">
+      <a href="{{ .Site.Params.twitter }}"><i class="fab fa-twitter"></i></a>
+      <a href="{{ .Site.Params.facebook }}"><i class="fab fa-facebook-f"></i></a>
+      <a href="{{ .Site.Params.pinterest }}"><i class="fab fa-pinterest-p"></i></a>
+      <a href="{{ .Site.Params.instagram }}"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <a href="{{ "/" | relURL }}" class="logo">
+      <i class="fas fa-cube"></i> Komito
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}" {{ if $.IsHome }}{{ if eq .URL "/" }}class="active"{{ end }}{{ end }}>{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+    <div class="nav-icons">
+      <a href="#"><i class="fas fa-search"></i></a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</nav>

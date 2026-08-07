@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Basic Pack",
+    "price": "$20.00",
+    "features": [
+      "High speed internet",
+      "Free parking space",
+      "Drinks & coffee",
+      "Full access"
+    ],
+    "cta": "Book Space"
+  },
+  {
+    "name": "Standard Pack",
+    "price": "$40.00",
+    "features": [
+      "High speed internet",
+      "Free parking space",
+      "Drinks & coffee",
+      "Full access"
+    ],
+    "cta": "Book Space"
+  },
+  {
+    "name": "Premium Pack",
+    "price": "$60.00",
+    "features": [
+      "High speed internet",
+      "Free parking space",
+      "Drinks & coffee",
+      "Full access"
+    ],
+    "cta": "Book Space"
+  }
+]

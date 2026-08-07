@@ -1,0 +1,22 @@
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">{{ .Site.Params.testimonials_label }}</span>
+      <h2 class="section-title">{{ .Site.Params.testimonials_title }}</h2>
+    </div>
+    <div class="testimonials-grid">
+      {{ range .Site.Data.testimonials }}
+      <div class="testimonial-card">
+        <p class="testimonial-text">{{ .text }}</p>
+        <div class="testimonial-author">
+          <h4>{{ .name }}</h4>
+          <span>{{ .role }}</span>
+        </div>
+        <div class="testimonial-avatar">
+          <img src="{{ .avatar }}" alt="{{ .name }}">
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<section class="features" id="features">
+  <div class="container">
+    <div class="features-header">
+      <div class="features-header-left">
+        <span class="section-label">{{ .Site.Params.features_label }}</span>
+        <h2>{{ .Site.Params.features_title }}</h2>
+      </div>
+      <div class="features-badge">
+        <div class="features-badge-icon"><i class="fas fa-building"></i></div>
+        <div class="features-badge-text">{{ .Site.Params.features_badge_number }} Conference &<br>Meeting Rooms</div>
+      </div>
+    </div>
+    <div class="features-grid">
+      {{ range .Site.Data.features }}
+      <div class="feature-card">
+        <div class="feature-card-img">
+          <img src="{{ .image }}" alt="{{ .title }}">
+        </div>
+        <div class="feature-card-content">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+          <a href="{{ .link }}" class="feature-card-link"><i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

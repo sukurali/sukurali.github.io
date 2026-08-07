@@ -1,0 +1,28 @@
+<section class="about">
+  <div class="container">
+    <div class="about-content">
+      <span class="section-label">{{ .Site.Params.about_label }}</span>
+      <h2>{{ .Site.Params.about_title }}</h2>
+      <span class="about-subtitle">{{ .Site.Params.about_subtitle }}</span>
+      <p>{{ .Site.Params.about_text }}</p>
+      <div class="about-list">
+        {{ range .Site.Data.about_list }}
+        <div class="about-list-item">
+          <h4><i class="fas fa-caret-right"></i> {{ .title }}</h4>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+      <a href="#" class="btn btn-orange"><i class="fas fa-arrow-right"></i> {{ .Site.Params.about_cta }}</a>
+    </div>
+    <div class="about-images">
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=500&q=80" alt="Office">
+      </div>
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=500&q=80" alt="Meeting">
+      </div>
+      <div class="experience-badge">{{ .Site.Params.about_experience }}</div>
+    </div>
+  </div>
+</section>

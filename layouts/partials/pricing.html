@@ -1,0 +1,20 @@
+<section class="pricing">
+  <div class="container">
+    <span class="section-label">{{ .Site.Params.pricing_label }}</span>
+    <h2 class="section-title">{{ .Site.Params.pricing_title }}</h2>
+    <div class="pricing-grid">
+      {{ range .Site.Data.pricing }}
+      <div class="pricing-card">
+        <h3>{{ .name }}</h3>
+        <div class="price">{{ .price }}</div>
+        <ul class="pricing-features">
+          {{ range .features }}
+          <li><i class="fas fa-check-circle"></i> {{ . }}</li>
+          {{ end }}
+        </ul>
+        <a href="#" class="btn btn-dark"><i class="fas fa-arrow-right"></i> {{ .cta }}</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

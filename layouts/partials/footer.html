@@ -1,0 +1,46 @@
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>{{ .Site.Params.footer_help_title }}</h3>
+        <p>{{ .Site.Params.footer_call_text }}</p>
+        <a href="tel:{{ .Site.Params.phone_display }}" class="footer-phone">{{ .Site.Params.phone_display }}</a>
+        <div class="footer-social">
+          <a href="{{ .Site.Params.facebook }}"><i class="fab fa-facebook-f"></i></a>
+          <a href="{{ .Site.Params.twitter }}"><i class="fab fa-twitter"></i></a>
+          <a href="{{ .Site.Params.pinterest }}"><i class="fab fa-pinterest-p"></i></a>
+          <a href="{{ .Site.Params.instagram }}"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Links</h3>
+        <ul class="footer-links">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Latest events</a></li>
+          <li><a href="#">Our services</a></li>
+          <li><a href="#">News & articles</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Timing</h3>
+        <ul class="footer-links">
+          <li>Mon-Fri: 7:00AM - 6:00PM</li>
+          <li>Saturday: 9:00AM - 5:00PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> {{ .Site.Params.address }}</li>
+          <li><i class="fas fa-envelope"></i> {{ .Site.Params.email }}</li>
+          <li><i class="fas fa-phone"></i> {{ .Site.Params.phone_display }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>{{ .Site.Params.copyright }}</p>
+    </div>
+  </div>
+</footer>
